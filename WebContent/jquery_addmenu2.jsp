@@ -1,0 +1,51 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <style>
+    li {
+      list-style-type:none;
+	  display:inline-block;
+	  border:1px solid darkblue;
+	  margin-left:30px;
+	  padding:2px;
+	  color:darkblue
+	}
+	.chg {
+      color:white;
+	  background:darkblue;
+	}
+  </style>
+  <script>
+    $(function() {
+/*     	var chk = [0,0,0,0,0] // 변수를 다 사용하기 위해서 배열을 사용
+        $(".aa").mouseover(function() {
+        	var n = $(this).index(); // 클래스 .aa중에 선택된 태그의 인덱스
+          if(chk[n]%2 == 0)
+	        $(this).addClass("chg"); // 이전 css();
+	      else
+            $(this).removeClass("chg");
+          chk[n]++; */
+        $(".aa").click(function() {
+        	  if($(this).hasClass("chg"))
+        		  $(this).removeClass("chg");
+        	  else
+        		  $(this).addClass("chg"); 
+		});
+	});
+  </script>
+</head>
+<body>
+    <ul>
+	  <li class="aa"> 아이언맨 </li>
+	  <li class="aa"> 스파이더맨 </li>
+	  <li class="aa"> 헐크 </li>
+	  <li class="aa"> 토르 </li>
+	  <li class="aa"> 캡틴 아메리카 </li>
+	</ul>
+</body>
+</html>
