@@ -16,7 +16,8 @@
 }
 </style>
 <script>
-	$(function() { // $(선택자).animate({내용},시간); => 시간동안 내용실행
+	$(function() { 
+		// $(선택자).animate({내용},시간); => 현재의 속성을 정해진 시간후에 내용실행
 		$("#cjy").animate({
 			width : "300px",
 			height : "300px" 

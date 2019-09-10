@@ -18,7 +18,8 @@ top: 0px;
 </style>
 <script>
 	$(function() {
-		$("#btn").click(function() {
+		$("#btn").click(function() { 
+			// 위치는 position이 필요한다
 			$("#cjy").animate({
 				left : "400px"
 			}, 2000).animate({
