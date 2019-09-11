@@ -43,7 +43,7 @@ body {
 			$(".img").animate({
 				marginLeft:"-300px"
 			},3000,"linear",function(){
-				$(".img img").eq(0).innertAfter($(".img img").eq(6));
+				$(".img img").eq(0).insertAfter($(".img img").eq(6));
 				$(".img").css("marginLeft","0px");
 			});
 		},6000);
