@@ -16,7 +16,7 @@ color: blue;
 font-size:30px;
 }
 </style>
- <script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
 <script>
 $(function() {
 	$(".cjy").click(function() {
